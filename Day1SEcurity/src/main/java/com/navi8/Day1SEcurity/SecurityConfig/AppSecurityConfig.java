@@ -19,7 +19,7 @@ public class AppSecurityConfig {
 		        .permitAll()
 		        .anyRequest()
 		        .authenticated();
-		});
+		}).formLogin();
 
 		return http.build();
 
